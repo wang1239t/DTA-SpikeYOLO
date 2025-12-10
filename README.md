@@ -3,14 +3,14 @@
 ![DTA-SpikeYOLO](https://github.com/wang1239t/myimg/blob/main/DTA-SpikeYOLO.png)
 ## Installation
 ### Conda
-Our environment runs on CUDA 11.6, one RTX 3090 GPUs and Ubuntu 22.04
+Our environment runs on CUDA 11.8, one RTX 3090 GPUs and Ubuntu 22.04
 ```
 conda create -y -n dtaspikeyolo python=3.9
 conda activate dtaspikeyolo
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
+conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
 ### Venv
-Install the dependencies for the environment.
+Install the dependencies for the environment. The rest of the environment configuration is the same as [SpikeYOLO](https://github.com/BICLab/SpikeYOLO).
 ```
 pip install -r requirements.txt
 ```
